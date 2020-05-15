@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "473080474667",
+    "firebase_url": "https://vocals-62d6d.firebaseio.com",
+    "project_id": "vocals-62d6d",
+    "storage_bucket": "vocals-62d6d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473080474667:android:ce8427eed8a12040d50e6e",
+        "android_client_info": {
+          "package_name": "com.example.vocals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "473080474667-2ggadc7jpjddstt9b7h4vv22m8iir6hk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL3lYTnRr1QghKWYtvmK2kuSD0aw5QQy8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "473080474667-2ggadc7jpjddstt9b7h4vv22m8iir6hk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

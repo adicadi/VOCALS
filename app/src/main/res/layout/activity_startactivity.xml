@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/sharpbackground"
+    tools:context=".Startactivity"
+    tools:ignore="ExtraText">
+
+    <Button
+        android:id="@+id/start_reg_btn"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="190dp"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="sans-serif-black"
+        android:hapticFeedbackEnabled="true"
+        android:stateListAnimator="@android:anim/overshoot_interpolator"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/start_login_btn"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="256dp"
+        android:background="@drawable/rounded_login"
+        android:fontFamily="sans-serif-black"
+        android:hapticFeedbackEnabled="true"
+        android:stateListAnimator="@android:anim/overshoot_interpolator"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:typeface="normal" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="244dp"
+        android:layout_height="240dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:cropToPadding="false"
+        android:adjustViewBounds="true"
+        android:paddingVertical="0dp"
+        android:paddingHorizontal="0dp"
+        android:contentDescription="@string/icon"
+        app:srcCompat="@drawable/whiteicon" />
+
+</RelativeLayout>
