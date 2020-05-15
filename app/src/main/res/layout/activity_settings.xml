@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,20 +16,27 @@
         android:background="@color/colorsettingtoolbar"
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:titleTextColor="#FFFFFF" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/settings_image"
-        android:layout_width="215dp"
+        android:layout_width="0dp"
         android:layout_height="215dp"
+        android:layout_above="@+id/settings_display_name"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="87dp"
+        android:layout_marginTop="9dp"
         android:src="@drawable/icon_user"
         app:civ_border_color="#FF000000"
-        app:civ_border_width="2dp" />
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_toolbar" />
 
     <TextView
         android:id="@+id/settings_display_name"
@@ -37,14 +44,18 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="330dp"
+        android:layout_marginTop="60dp"
         android:fontFamily="sans-serif-condensed"
         android:text="@string/display_name"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FEFFFFFF"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_image"
         tools:ignore="RelativeOverlap" />
 
     <TextView
@@ -53,13 +64,17 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="270dp"
+        android:layout_marginTop="47dp"
         android:fontFamily="sans-serif-condensed"
         android:text="@string/just_send_me_a_voice_note"
+        android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_display_name"
         tools:ignore="RelativeOverlap" />
 
     <Button
@@ -69,13 +84,19 @@
         android:layout_height="65dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="85dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/rounded_cornerwhite"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/change_image"
         android:textSize="15sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/settings_status_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_status" />
 
     <Button
         android:id="@+id/settings_status_btn"
@@ -84,14 +105,19 @@
         android:layout_height="65dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="85dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/rounded_cornerwhite"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/change_status"
         android:textSize="15sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_status" />
 
 
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
