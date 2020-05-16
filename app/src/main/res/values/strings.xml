@@ -127,6 +127,8 @@
     <string name="title_activity_pager">PagerActivity</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="your_status">Your Status</string>
 
 
 </resources>
